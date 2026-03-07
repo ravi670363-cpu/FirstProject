@@ -13,34 +13,30 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="container">
-        <div className="nav-content">
-          <Link to="/" className="logo">
-            <span className="logo-icon">📞</span>
-            <span className="logo-text">CallAnytime</span>
-          </Link>
-          
-          <div className="nav-links">
-            <Link to="/" className="nav-link">Home</Link>
-            {user ? (
-              <>
-                <Link to="/search" className="nav-link">Search</Link>
-                <Link to={`/profile/${user.id}`} className="nav-link">My Profile</Link>
-                <button onClick={handleLogout} className="btn btn-secondary">Logout</button>
-              </>
-            ) : (
-              <>
-                <Link to="/login" className="nav-link">Login</Link>
-                <Link to="/signup">
-                  <button className="btn btn-primary">Sign Up</button>
-                </Link>
-              </>
-            )}
-          </div>
+    <>
+      <div className="announcement-banner">
+        <div className="announcement-content">
+          <span className="announcement-text">
+            🌟 Escort in Ranchi Available 🌟 Premium Services 🌟 24/7 Available 🌟 Escort in Ranchi Available 🌟 Premium Services 🌟 24/7 Available 🌟
+          </span>
         </div>
       </div>
-    </nav>
+      <nav className="navbar">
+        <div className="container">
+          <div className="nav-content">
+            <Link to="/" className="logo">
+              <span className="logo-icon">📞</span>
+              <span className="logo-text">CallAnytime</span>
+            </Link>
+            
+            <div className="nav-links">
+              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/search" className="nav-link">Search</Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 };
 

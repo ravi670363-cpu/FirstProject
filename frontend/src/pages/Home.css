@@ -240,9 +240,27 @@
 
 .bio {
   color: #888;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   line-height: 1.6;
   font-size: 14px;
+}
+
+.phone {
+  color: #ff6b9d;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.phone a {
+  color: #ff6b9d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.phone a:hover {
+  color: #c06c84;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

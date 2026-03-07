@@ -1,3 +1,47 @@
+/* Announcement Banner */
+.announcement-banner {
+  background: linear-gradient(90deg, #ff6b9d 0%, #c06c84 50%, #f67280 100%);
+  overflow: hidden;
+  padding: 12px 0;
+  position: relative;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.announcement-content {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left 30s linear infinite;
+}
+
+.announcement-content:hover {
+  animation-play-state: paused;
+}
+
+.announcement-text {
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.announcement-text:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Navbar */
 .navbar {
   background: rgba(26, 26, 46, 0.95);
   backdrop-filter: blur(20px);
@@ -93,5 +137,13 @@
   
   .nav-link {
     font-size: 14px;
+  }
+  
+  .announcement-text {
+    font-size: 14px;
+  }
+  
+  .announcement-banner {
+    padding: 10px 0;
   }
 }

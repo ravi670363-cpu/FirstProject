@@ -5,6 +5,11 @@ import Footer from '../components/Footer';
 import axios from 'axios';
 import './Home.css';
 import heroVideo from '../assets/heroine.mp4';
+import img1 from '../assets/images/img1.jpeg';
+import img2 from '../assets/images/img2.jpeg';
+import img3 from '../assets/images/img3.jpeg';
+import img4 from '../assets/images/img4.jpeg';
+import img5 from '../assets/images/img5.jpeg';
 
 const Home = () => {
   const [featuredProfiles, setFeaturedProfiles] = useState([]);
@@ -21,6 +26,14 @@ const Home = () => {
       setFeaturedProfiles(response.data);
     } catch (error) {
       console.error('Error fetching profiles:', error);
+      // Show mock data with real images
+      setFeaturedProfiles([
+        { id: 1, name: 'Priya', age: 24, city: 'Ranchi', bio: 'Available for premium escort services 24/7', profile_picture: img1, phone: '+91 9876543210' },
+        { id: 2, name: 'Anjali', age: 26, city: 'Ranchi', bio: 'Professional escort service in Ranchi', profile_picture: img2, phone: '+91 9876543211' },
+        { id: 3, name: 'Neha', age: 23, city: 'Ranchi', bio: 'VIP escort services available', profile_picture: img3, phone: '+91 9876543212' },
+        { id: 4, name: 'Riya', age: 25, city: 'Ranchi', bio: 'Premium companion services', profile_picture: img4, phone: '+91 9876543213' },
+        { id: 5, name: 'Simran', age: 27, city: 'Ranchi', bio: 'Elite escort services in Ranchi', profile_picture: img5, phone: '+91 9876543214' }
+      ]);
     }
   };
 
@@ -79,6 +92,9 @@ const Home = () => {
                   <h3>{profile.name}, {profile.age}</h3>
                   <p className="location">📍 {profile.city}</p>
                   <p className="bio">{profile.bio || 'No bio yet'}</p>
+                  {profile.phone && (
+                    <p className="phone">📞 <a href={`tel:${profile.phone}`}>{profile.phone}</a></p>
+                  )}
                   <button 
                     onClick={() => navigate(`/profile/${profile.id}`)}
                     className="btn btn-primary"
