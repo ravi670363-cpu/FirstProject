@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="announcement-banner">
         <div className="announcement-content">
           <span className="announcement-text">
-            🌟 Escort in Ranchi Available 🌟 Premium Services 🌟 24/7 Available 🌟 Escort in Ranchi Available 🌟 Premium Services 🌟 24/7 Available 🌟
+            🌟 Ranchi Escorts 🌟 Ranchi Call Girls 🌟 Escort in Ranchi Available 24/7 🌟 Premium VIP Services 🌟 Call Now 🌟 Ranchi Escorts 🌟 Ranchi Call Girls 🌟
           </span>
         </div>
       </div>

@@ -8,7 +8,8 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>📞 CallAnytime</h3>
-            <p>Find your perfect match today</p>
+            <p>Premium Ranchi Escorts & Call Girls</p>
+            <p>Available 24/7 in Ranchi</p>
           </div>
           
           <div className="footer-section">
@@ -24,7 +25,8 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contact Us</h4>
             <p>Email: support@callanytime.com</p>
-            <p>Phone: +1 (555) 123-4567</p>
+            <p>Phone: +91 9876543210</p>
+            <p>Location: Ranchi, Jharkhand</p>
           </div>
           
           <div className="footer-section">
@@ -38,7 +40,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2026 CallAnytime. All rights reserved.</p>
+          <p>&copy; 2026 CallAnytime - Ranchi Escorts | Ranchi Call Girls | Premium Escort Services. All rights reserved.</p>
         </div>
       </div>
     </footer>

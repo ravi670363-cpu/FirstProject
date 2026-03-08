@@ -61,13 +61,13 @@ const Home = () => {
         </video>
         <div className="hero-overlay"></div>
         <div className="container hero-content">
-          <h1 className="hero-title">Find Your Perfect Match</h1>
-          <p className="hero-subtitle">Connect with amazing people who share your interests</p>
+          <h1 className="hero-title">Ranchi Escorts - Premium Call Girls</h1>
+          <p className="hero-subtitle">Best escort services in Ranchi | Available 24/7 | VIP Companions</p>
           
           <form onSubmit={handleSearch} className="search-bar">
             <input
               type="text"
-              placeholder="Search by name, age, city, or interests..."
+              placeholder="Search Ranchi escorts by name, age, or area..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -78,7 +78,7 @@ const Home = () => {
 
       <section className="featured-section">
         <div className="container">
-          <h2 className="section-title">Featured Profiles</h2>
+          <h2 className="section-title">Featured Ranchi Escorts</h2>
           <div className="profiles-grid">
             {featuredProfiles.map((profile) => (
               <div key={profile.id} className="profile-card card">
