@@ -73,6 +73,15 @@ const Home = () => {
             />
             <button type="submit" className="btn btn-primary">Search</button>
           </form>
+          
+          <div className="hero-contact-buttons">
+            <a href="tel:+919202695501" className="hero-contact-btn call-btn">
+              📞 Call Now: 9202695501
+            </a>
+            <a href="https://wa.me/919202695501" target="_blank" rel="noopener noreferrer" className="hero-contact-btn whatsapp-btn">
+              💬 WhatsApp Now
+            </a>
+          </div>
         </div>
       </section>
 
