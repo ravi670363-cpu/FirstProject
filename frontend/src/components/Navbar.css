@@ -7,6 +7,54 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
+.announcement-banner::before {
+  content: '💕';
+  position: absolute;
+  font-size: 24px;
+  animation: floatHeart1 8s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+.announcement-banner::after {
+  content: '❤️';
+  position: absolute;
+  font-size: 20px;
+  animation: floatHeart2 10s ease-in-out infinite;
+  opacity: 0.5;
+}
+
+@keyframes floatHeart1 {
+  0% {
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+  }
+  50% {
+    top: 30%;
+  }
+  100% {
+    left: 110%;
+    top: 50%;
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+@keyframes floatHeart2 {
+  0% {
+    left: -30px;
+    top: 40%;
+    transform: translateY(-50%) rotate(0deg);
+  }
+  50% {
+    top: 60%;
+  }
+  100% {
+    left: 110%;
+    top: 40%;
+    transform: translateY(-50%) rotate(-360deg);
+  }
+}
+
 .announcement-content {
   display: flex;
   white-space: nowrap;
@@ -67,10 +115,28 @@
   font-weight: 800;
   color: white;
   transition: transform 0.3s ease;
+  position: relative;
 }
 
 .logo:hover {
   transform: scale(1.05);
+}
+
+.logo::before {
+  content: '💖';
+  position: absolute;
+  left: -35px;
+  font-size: 20px;
+  animation: heartBeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
 
 .logo-icon {
@@ -135,6 +201,11 @@
     display: none;
   }
   
+  .logo::before {
+    left: -25px;
+    font-size: 16px;
+  }
+  
   .nav-link {
     font-size: 14px;
   }
@@ -145,5 +216,10 @@
   
   .announcement-banner {
     padding: 10px 0;
+  }
+  
+  .announcement-banner::before,
+  .announcement-banner::after {
+    font-size: 16px;
   }
 }

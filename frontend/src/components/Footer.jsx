@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contact Us</h4>
             <p>Email: support@callanytime.com</p>
-            <p>Phone: +91 9876543210</p>
+            <p>Phone: +91 9202695501</p>
             <p>Location: Ranchi, Jharkhand</p>
           </div>
           

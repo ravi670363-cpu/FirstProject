@@ -28,11 +28,11 @@ const Home = () => {
       console.error('Error fetching profiles:', error);
       // Show mock data with real images
       setFeaturedProfiles([
-        { id: 1, name: 'Priya', age: 24, city: 'Ranchi', bio: 'Available for premium escort services 24/7', profile_picture: img1, phone: '+91 9876543210' },
-        { id: 2, name: 'Anjali', age: 26, city: 'Ranchi', bio: 'Professional escort service in Ranchi', profile_picture: img2, phone: '+91 9876543211' },
-        { id: 3, name: 'Neha', age: 23, city: 'Ranchi', bio: 'VIP escort services available', profile_picture: img3, phone: '+91 9876543212' },
-        { id: 4, name: 'Riya', age: 25, city: 'Ranchi', bio: 'Premium companion services', profile_picture: img4, phone: '+91 9876543213' },
-        { id: 5, name: 'Simran', age: 27, city: 'Ranchi', bio: 'Elite escort services in Ranchi', profile_picture: img5, phone: '+91 9876543214' }
+        { id: 1, name: 'Priya', age: 24, city: 'Ranchi', bio: 'Available for premium escort services 24/7', profile_picture: img1, phone: '+91 9202695501' },
+        { id: 2, name: 'Anjali', age: 26, city: 'Ranchi', bio: 'Professional escort service in Ranchi', profile_picture: img2, phone: '+91 9202695501' },
+        { id: 3, name: 'Neha', age: 23, city: 'Ranchi', bio: 'VIP escort services available', profile_picture: img3, phone: '+91 9202695501' },
+        { id: 4, name: 'Riya', age: 25, city: 'Ranchi', bio: 'Premium companion services', profile_picture: img4, phone: '+91 9202695501' },
+        { id: 5, name: 'Simran', age: 27, city: 'Ranchi', bio: 'Elite escort services in Ranchi', profile_picture: img5, phone: '+91 9202695501' }
       ]);
     }
   };
@@ -93,11 +93,18 @@ const Home = () => {
                   <p className="location">📍 {profile.city}</p>
                   <p className="bio">{profile.bio || 'No bio yet'}</p>
                   {profile.phone && (
-                    <p className="phone">📞 <a href={`tel:${profile.phone}`}>{profile.phone}</a></p>
+                    <div className="contact-buttons">
+                      <a href={`tel:${profile.phone}`} className="contact-btn call-btn">
+                        📞 Call Now
+                      </a>
+                      <a href={`https://wa.me/919202695501`} target="_blank" rel="noopener noreferrer" className="contact-btn whatsapp-btn">
+                        💬 WhatsApp
+                      </a>
+                    </div>
                   )}
                   <button 
                     onClick={() => navigate(`/profile/${profile.id}`)}
-                    className="btn btn-primary"
+                    className="btn btn-primary view-profile-btn"
                   >
                     View Profile
                   </button>
