@@ -1,17 +1,7 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
-  const { user, logout } = useAuth();
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    logout();
-    navigate('/');
-  };
-
   return (
     <>
       <div className="announcement-banner">
