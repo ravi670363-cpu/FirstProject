@@ -124,6 +124,52 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="seo-section">
+        <div className="container">
+          <h2>Ranchi Escorts - Premium Call Girls Service</h2>
+          <p>Welcome to <strong>CallAnytime</strong>, the most trusted <strong>Ranchi escort service</strong>. We provide premium <strong>Ranchi call girls</strong> available 24/7 for your companionship needs. Our verified profiles ensure you get the best experience with top-rated <strong>escorts in Ranchi</strong>.</p>
+
+          <div className="seo-grid">
+            <div className="seo-card">
+              <h3>🌟 Ranchi Call Girls</h3>
+              <p>Find beautiful and verified <strong>call girls in Ranchi</strong>. All profiles are real with genuine photos. Book instantly by calling <strong>9202695501</strong>.</p>
+            </div>
+            <div className="seo-card">
+              <h3>💎 VIP Escort Service Ranchi</h3>
+              <p>Premium <strong>VIP escort services in Ranchi</strong> for elite clients. Discreet, professional, and available round the clock for your pleasure.</p>
+            </div>
+            <div className="seo-card">
+              <h3>📞 24/7 Available</h3>
+              <p>Our <strong>Ranchi escorts</strong> are available anytime day or night. Call or WhatsApp <strong>9202695501</strong> for instant booking and service.</p>
+            </div>
+            <div className="seo-card">
+              <h3>✅ Verified Profiles</h3>
+              <p>All <strong>Ranchi call girl</strong> profiles are 100% verified with real photos. Safe, secure, and trusted <strong>escort service in Ranchi</strong>.</p>
+            </div>
+          </div>
+
+          <div className="faq-section">
+            <h2>Frequently Asked Questions - Ranchi Escorts</h2>
+            <div className="faq-item">
+              <h3>How to contact Ranchi escorts?</h3>
+              <p>Call or WhatsApp us at <strong>9202695501</strong> for instant booking of Ranchi escorts. Available 24/7.</p>
+            </div>
+            <div className="faq-item">
+              <h3>Are Ranchi call girls available 24/7?</h3>
+              <p>Yes, our Ranchi escort services are available 24 hours a day, 7 days a week including holidays.</p>
+            </div>
+            <div className="faq-item">
+              <h3>What areas in Ranchi do you serve?</h3>
+              <p>We provide escort services across all areas of Ranchi including Doranda, Kanke, Lalpur, Harmu, Ratu Road, and all major hotels.</p>
+            </div>
+            <div className="faq-item">
+              <h3>Are the escort profiles real?</h3>
+              <p>Yes, all profiles on CallAnytime are 100% real and verified with genuine photos of Ranchi escorts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
