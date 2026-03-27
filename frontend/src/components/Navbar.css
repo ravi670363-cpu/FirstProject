@@ -123,11 +123,11 @@
 }
 
 .logo::before {
-  content: '💖';
+  content: '❤️';
   position: absolute;
-  left: -35px;
-  font-size: 20px;
-  animation: heartBeat 1.5s ease-in-out infinite;
+  left: -38px;
+  font-size: 22px;
+  animation: heartBeat 1.2s ease-in-out infinite;
 }
 
 @keyframes heartBeat {
