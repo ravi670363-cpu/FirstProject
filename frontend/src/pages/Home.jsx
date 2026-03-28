@@ -4,7 +4,9 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import axios from 'axios';
 import './Home.css';
-import heroVideo from '../assets/heroine.mp4';
+
+// Video loaded from public folder
+const heroVideo = '/heroine.mp4';
 
 const PROFILES = [
   { id: 1, name: 'Priya', age: 24, city: 'Ranchi', bio: 'Available for premium escort services 24/7', profile_picture: 'https://randomuser.me/api/portraits/women/1.jpg', phone: '+91 9202695501' },
