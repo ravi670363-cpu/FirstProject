@@ -1,22 +1,16 @@
-import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import img1 from '../assets/images/img1.jpeg';
-import img2 from '../assets/images/img2.jpeg';
-import img3 from '../assets/images/img3.jpeg';
-import img4 from '../assets/images/img4.jpeg';
-import img5 from '../assets/images/img5.jpeg';
 import './Home.css';
 
-const VIPEscortsRanchi = () => {
-  const profiles = [
-    { id: 1, name: 'Priya', age: 24, city: 'Ranchi', bio: 'VIP escort in Ranchi - Premium services', profile_picture: img1 },
-    { id: 2, name: 'Anjali', age: 26, city: 'Ranchi', bio: 'High class VIP escort Ranchi', profile_picture: img2 },
-    { id: 3, name: 'Neha', age: 23, city: 'Ranchi', bio: 'Elite VIP escort service Ranchi', profile_picture: img3 },
-    { id: 4, name: 'Riya', age: 25, city: 'Ranchi', bio: 'Model VIP escort in Ranchi', profile_picture: img4 },
-    { id: 5, name: 'Simran', age: 27, city: 'Ranchi', bio: 'Premium VIP escort Ranchi', profile_picture: img5 },
-  ];
+const profiles = [
+  { id: 1, name: 'Priya', age: 24, city: 'Ranchi', bio: 'VIP escort in Ranchi - Premium services', profile_picture: 'https://randomuser.me/api/portraits/women/6.jpg' },
+  { id: 2, name: 'Anjali', age: 26, city: 'Ranchi', bio: 'High class VIP escort Ranchi', profile_picture: 'https://randomuser.me/api/portraits/women/7.jpg' },
+  { id: 3, name: 'Neha', age: 23, city: 'Ranchi', bio: 'Elite VIP escort service Ranchi', profile_picture: 'https://randomuser.me/api/portraits/women/8.jpg' },
+  { id: 4, name: 'Riya', age: 25, city: 'Ranchi', bio: 'Model VIP escort in Ranchi', profile_picture: 'https://randomuser.me/api/portraits/women/9.jpg' },
+  { id: 5, name: 'Simran', age: 27, city: 'Ranchi', bio: 'Premium VIP escort Ranchi', profile_picture: 'https://randomuser.me/api/portraits/women/10.jpg' },
+];
 
+const VIPEscortsRanchi = () => {
   return (
     <div className="home">
       <Navbar />
@@ -28,7 +22,6 @@ const VIPEscortsRanchi = () => {
           <p style={{ color: 'white', textAlign: 'center', fontSize: '18px', marginBottom: '40px' }}>
             Elite VIP escort services in Ranchi. Call: <a href="tel:+919202695501" style={{ color: '#ff6b9d' }}>9202695501</a>
           </p>
-
           <div className="profiles-grid">
             {profiles.map((profile) => (
               <div key={profile.id} className="profile-card card">
@@ -47,11 +40,9 @@ const VIPEscortsRanchi = () => {
               </div>
             ))}
           </div>
-
           <div style={{ marginTop: '60px', color: 'white', lineHeight: '1.8' }}>
             <h2 style={{ color: '#ff6b9d', marginBottom: '20px' }}>VIP Escort Service in Ranchi</h2>
-            <p>Experience the finest <strong style={{ color: '#ff6b9d' }}>VIP escort service in Ranchi</strong>. Our premium escorts are handpicked for their beauty, intelligence, and professionalism.</p>
-            <p style={{ marginTop: '15px' }}>Available for hotel visits, dinner dates, and private meetings. All <strong style={{ color: '#ff6b9d' }}>VIP escorts in Ranchi</strong> are 100% verified.</p>
+            <p>Experience the finest <strong style={{ color: '#ff6b9d' }}>VIP escort service in Ranchi</strong>. Our premium escorts are handpicked for their beauty and professionalism. Available 24/7.</p>
             <div style={{ marginTop: '30px', textAlign: 'center' }}>
               <a href="tel:+919202695501" style={{ display: 'inline-block', padding: '16px 40px', borderRadius: '50px', background: 'linear-gradient(135deg, #ff6b9d, #c06c84)', color: 'white', textDecoration: 'none', fontWeight: '700', fontSize: '18px' }}>
                 📞 Book VIP Escort: 9202695501
